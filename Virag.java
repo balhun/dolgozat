@@ -70,7 +70,8 @@ public class Main {
 			else szin.put(x.szin, szin.get(x.szin) + x.darab);
 		}
 		System.out.printf("3) Eladott darabszám színek szerinti (abc) csoportosításban:\n   ");
-		int n = szin.keySet().size(), i=0;
+		int n = szin.keySet().size();
+		int i=0;
 		for (String x : szin.keySet()) {
 			System.out.printf("%d %s", szin.get(x), x);
 			i++; if (i<n) System.out.print(", ");
